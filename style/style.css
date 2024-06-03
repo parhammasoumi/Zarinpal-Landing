@@ -1,0 +1,545 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "iranyekanwebregular", "iranyekanwebmedium";
+}
+header {
+  width: 1170px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  border-radius: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 0 7px;
+  transition: all 0.3s ease;
+  margin-bottom: 1.2rem;
+}
+.logo-image {
+  margin: 11px 28px;
+}
+nav {
+  display: flex;
+}
+.header-ul {
+  display: flex;
+  list-style: none;
+}
+.header-ul li {
+  margin: 0 15px;
+  font-size: 14px;
+}
+.header-ul li a {
+  text-decoration: none;
+  color: #303030;
+}
+.arrow-down {
+  margin-bottom: -2px;
+  margin-right: 3px;
+  width: 8px;
+}
+.my-zarin a {
+  color: #28457b;
+  background-color: rgba(232, 239, 254, 0.6);
+  border-radius: 20px;
+  padding: 10px 27px;
+  margin-right: 20px;
+  font-family: "YekanBakhBold";
+}
+.my-zarin a:hover {
+  background-color: #fbf6d9;
+}
+.hamburger-icon {
+  display: none;
+}
+.hamburger-icon img {
+  width: 27px;
+  margin-bottom: -6px;
+}
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  font: 1rem "YekanBakhMedium";
+  transform: translateY(-100%);
+}
+.cross-icon {
+  text-align: left;
+  margin: 0 0 0 30px;
+  padding: 21px 0;
+}
+.cross-icon img {
+  width: 20px;
+  height: 20px;
+}
+.hamburger-menu-items {
+  padding: 10px 30px;
+}
+.hamburger-menu-items li {
+  list-style: none;
+  margin: 8px 0 0 0;
+}
+.hamburger-menu-items a {
+  text-decoration: none;
+  color: #000;
+}
+.hamburger-menu-items div {
+  background-color: #dfe1e4;
+  width: 90%;
+  margin: 8px;
+  height: 1px;
+}
+.hamburger-moreItem {
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+}
+.hamburger-moreItem a {
+  text-decoration: none;
+  margin-left: 5px;
+  color: #28457b;
+  font-size: 0.85rem;
+}
+.hamburger-moreItem img {
+  display: block;
+  width: 13px;
+  height: 13px;
+}
+.show-hamburger-menu {
+  animation: FadeInDown 0.65s forwards;
+}
+
+@keyframes FadeInDown {
+  0% {
+    opacity: 0;
+    transform: translatex(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0%);
+  }
+}
+#show-product-menu {
+  position: relative;
+}
+.product-menu {
+  position: absolute;
+  width: 332px;
+  margin-top: 23px;
+  border-radius: 12px;
+  border-top: 5px solid #f8e88b;
+  padding: 8px 0 0 0;
+  top: 0;
+  left: -135px;
+  background-color: #fff;
+  display: none;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.sub-text {
+  transition: all 0.3s ease;
+  margin: 0.7rem 0.9rem 1.2rem;
+}
+.sub-text:hover {
+  background-color: rgba(232, 239, 254, 0.6);
+  border-radius: 20px;
+  padding: 15px;
+}
+.subtitle {
+  font-size: 0.75rem;
+}
+.text {
+  font-size: 0.6rem;
+}
+#show-more-menu {
+  position: relative;
+}
+#show-more-menu ul {
+  position: absolute;
+  top: 0;
+  left: -35px;
+  background-color: #fff;
+  border-top: 5px solid #f8e88b;
+  border-radius: 12px;
+  width: 123px;
+  list-style: none;
+  margin: 23px 0 0 0;
+  padding: 20px 0 10px 0;
+  display: none;
+}
+#show-more-menu li {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  color: #000;
+}
+#show-more-menu li:hover {
+  background-color: rgba(232, 239, 254, 0.6);
+  border-radius: 20px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+@keyframes showUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.banner {
+  width: 1170px;
+  margin: 20px auto;
+  background: linear-gradient(135deg, #21254e, #2b4a83);
+  border-radius: 20px;
+  padding: 124px 60px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.banner-text h1 {
+  color: #fff;
+  font-family: YekanBakhHeavy;
+}
+.banner-text p {
+  font-family: iranyekanwebregular;
+  font-size: 1.15rem;
+  line-height: 2.5rem;
+  margin: 25px 0;
+  color: #fff;
+}
+
+.banner-image img {
+  width: 500px;
+}
+.login-button {
+  margin-top: 60px;
+}
+.singUp {
+  font-size: 1rem;
+  font-family: YekanBakhBold;
+  color: #000;
+  background-color: #ffd900;
+  padding: 6px 15px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 6px;
+  text-decoration: none;
+}
+.logIn {
+  font-size: 1rem;
+  font-family: YekanBakhBold;
+  color: #fff;
+  background-color: #435a8a;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.go-down {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 58px;
+}
+.go-down div {
+  background-image: url(../images/arrowbottom.svg);
+  width: 164px;
+  height: 78px;
+}
+.go-down img {
+  width: 15px;
+  position: relative;
+  top: -60px;
+}
+.online-payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1170px;
+  margin: auto;
+}
+.section-image img {
+  width: 450px;
+  height: 480px;
+}
+.section-text {
+  width: 530px;
+  margin: 30px 0 118px 0;
+}
+.section-text h2 {
+  color: #303030;
+  font-family: YekanBakhHeavy;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 5px 0 10px;
+}
+.section-text h3 {
+  color: #747480;
+  font-family: YekanBakhMedium;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: 20px 0 5px;
+}
+.section-text p {
+  color: #303030;
+  font-family: YekanBakhMedium;
+  text-align: justify;
+  line-height: 40px;
+  border-bottom: 1px solid #dfe1e4;
+  padding-bottom: 20px;
+  margin-top: 16px;
+}
+.section-links {
+  display: flex;
+  margin-top: 40px;
+}
+.section-links .first-button {
+  font-size: 0.9rem;
+  font-family: iranyekanwebmedium;
+  color: #000;
+  background: #ffd900;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.section-links .second-button {
+  font-size: 0.9rem;
+  font-family: iranyekanwebmedium;
+  color: #28457b;
+  background-color: rgba(232, 239, 254, 0.7);
+  padding: 6px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.section-links .second-button img {
+  width: 18px;
+  height: 15px;
+  margin-right: 5px;
+}
+.section-links a {
+  text-decoration: none;
+}
+.image-four {
+  width: 570px;
+  height: 480px;
+}
+.attributes {
+  width: 1170px;
+  margin: auto;
+  display: flex;
+}
+.definition {
+  width: 35%;
+  margin-top: 18px;
+}
+.definition h3 {
+  color: #303030;
+  font-family: YekanBakhHeavy;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.definition p {
+  width: 80%;
+  margin-top: 40px;
+  line-height: 40px;
+  font-size: 1rem;
+  text-align: justify;
+}
+.items {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px;
+  padding-top: 0;
+}
+.items .item {
+  padding: 18px 24px 20px 0;
+}
+.items img {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+}
+.items .item div {
+  display: flex;
+  align-items: center;
+}
+.items .item p {
+  line-height: 36px;
+  font-size: 1rem;
+}
+.first-item,
+.second-item {
+  border-bottom: 1px solid #dfe1e4;
+}
+.first-item,
+.third-item {
+  border-left: 1px solid #dfe1e4;
+}
+.start-box {
+  width: 1170px;
+  height: 220px;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid silver;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-box h4 {
+  font-family: YekanBakhHeavy;
+  font-size: 1.7rem;
+}
+
+.start-box p {
+  font-family: YekanBakhMedium;
+  font-size: 1.4rem;
+  color: #747480;
+  margin-top: 10px;
+}
+
+.start-box a {
+  text-decoration: none;
+  font-family: iranyekanwebmedium;
+  font-size: 0.9rem;
+  min-height: 28px;
+  line-height: 28px;
+  padding: 4px 14px;
+  background-color: #ffd900;
+  color: #000;
+  border-radius: 10px;
+}
+
+.support {
+  width: 1110px;
+  height: 70px;
+  padding: 0 30px;
+  margin: 50px auto;
+  background: #fbf6f1;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.support-number {
+  font-family: YekanBakhHeavy;
+  font-size: 1.5rem;
+}
+
+#line {
+  margin: 0 15px;
+}
+
+#phone-number {
+  color: #21254e;
+}
+
+.support-request {
+  display: flex;
+  color: #21254e;
+  font-family: YekanBakhBold;
+  font-size: 1.5rem;
+}
+
+.support-request img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: auto;
+}
+footer .footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: calc((100% - 330px));
+  margin-bottom: 50px;
+  padding: 0 10px;
+}
+.social-media {
+  width: 330px;
+  padding: 0 30px;
+  margin-bottom: 100px;
+}
+.social-media p {
+  font-family: YekanBakhHeavy;
+  font-size: 1.3rem;
+  color: #303030;
+}
+
+.social-media div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-media a {
+  background-color: #eff4fe;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+.footer-links p {
+  font-size: 1.3rem;
+  font-family: YekanBakhHeavy;
+  margin-top: 15px;
+  color: #303030;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: iranyekanwebmedium;
+  color: #000;
+}
+
+.footer-links li {
+  padding: 8px 0;
+}
+
+.bell {
+  background-color: #2e82ff;
+  width: fit-content;
+  padding: 7px 7px 0;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+.bell img {
+  width: 40px;
+}

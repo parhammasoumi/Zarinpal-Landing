@@ -1,0 +1,275 @@
+@media (max-width: 1200px) {
+  header {
+    width: 940px;
+  }
+  .banner {
+    width: 980px;
+    padding: 60px 40px 120px;
+  }
+  .banner-image img {
+    width: 430px;
+  }
+  .online-payment {
+    width: 940px;
+  }
+  .image-three img,
+  .image-four img,
+  .image-five img {
+    width: 380px;
+    height: 400px;
+  }
+  .image-four {
+    margin-right: 20px;
+  }
+  .attributes {
+    width: 940px;
+    padding: 0 8px;
+    flex-direction: column;
+  }
+  .definition {
+    width: auto;
+    margin: 0;
+  }
+
+  .items {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+  }
+  .item {
+    border: none;
+  }
+  .item div h2 {
+    font-size: 1.3rem;
+  }
+  .item div p {
+    font-size: 1rem;
+  }
+  .item div {
+    margin: 20px 0;
+  }
+  .start-box {
+    width: 940px;
+  }
+
+  .support {
+    width: 880px;
+  }
+
+  footer {
+    width: 940px;
+  }
+}
+@media (max-width: 990px) {
+  header {
+    width: auto;
+    padding: 10px 30px 10px 60px;
+    transition: all 0.3s ease;
+  }
+  .header-ul > li:last-child {
+    display: none;
+  }
+  .header-ul li {
+    margin: 0 12px;
+  }
+  .banner {
+    width: auto;
+    margin: 0 2.2rem;
+    padding: 40px 35px 85px;
+  }
+  .banner-image img {
+    display: none;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .banner-text p {
+    margin: 5px 0 0 0;
+    font-size: 1rem;
+  }
+  .login-button {
+    margin: 39px 0 0 0;
+  }
+  .go-down {
+    bottom: 38px;
+  }
+  .online-payment {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  .section-text {
+    margin: 30px 0 20px 0;
+  }
+  .online-payment-two,
+  .online-payment-four {
+    flex-direction: column-reverse;
+  }
+  .image-four {
+    margin: 0 170px 0 0;
+  }
+  .section-text {
+    width: auto;
+  }
+  .attributes {
+    width: auto;
+    padding: 0 35px;
+  }
+  .start-box {
+    margin: 0 38px;
+    width: calc(100% - 76px);
+  }
+  .support {
+    width: calc(100% - 120px);
+  }
+  .support-request,
+  .support-number {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    flex-direction: column;
+    width: calc(100% - 60px);
+  }
+  footer .footer-links {
+    width: 100%;
+  }
+
+  footer .social-media {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 8px;
+    width: auto;
+  }
+  .logo-image {
+    margin: 0;
+  }
+  .header-ul {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block;
+  }
+  .banner {
+    margin: 0 0.5rem;
+  }
+  .online-payment {
+    text-align: center;
+  }
+  .section-links {
+    justify-content: center;
+  }
+  .image-four {
+    margin: 0px;
+  }
+  .definition {
+    text-align: center;
+    margin-top: 90px;
+  }
+  .definition h3 {
+    font-size: 1.6rem;
+  }
+  .definition p {
+    width: auto;
+  }
+  .items .item {
+    padding: 18px 0 20px 20px;
+  }
+  .start-box {
+    margin: 0 8px;
+    width: calc(100% - 16px);
+  }
+  .support {
+    flex-direction: column;
+    align-items: flex-start;
+    background: none;
+  }
+  .support-request {
+    background: #fbf6f1;
+    padding: 5px 20px;
+    border-radius: 35px;
+    margin-top: 20px;
+  }
+  footer .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer .footer-links div {
+    margin-top: 25px;
+  }
+
+  footer {
+    width: calc(100% - 120px);
+    margin: 0 60px;
+  }
+}
+@media (max-width: 575px) {
+  .banner-text {
+    text-align: right;
+    margin: 2.4rem 0.3rem 0 0;
+  }
+  .banner-text h1 {
+    font-size: 1.2rem;
+  }
+  .banner-text p {
+    text-align: justify;
+  }
+  .login-button {
+    text-align: center;
+  }
+  .online-payment {
+    padding: 0 3.5rem;
+  }
+  .online-payment img {
+    display: none;
+  }
+  .section-text h3 {
+    font-size: 1.4rem;
+  }
+  .section-text h2 {
+    font-size: 1.5rem;
+  }
+  .image-four {
+    width: 0;
+    height: 0;
+  }
+  .items {
+    padding: 50px 0;
+    grid-template-columns: 1fr;
+  }
+  .items .item {
+    padding: 18px 0;
+  }
+  .start-box {
+    height: 180px;
+  }
+  .start-box h4 {
+    font-size: 1.2rem;
+  }
+  .start-box p {
+    font-size: 1rem;
+  }
+  .support {
+    width: calc(100% - 60px);
+    padding: 0;
+    margin: 50px 30px;
+  }
+  .support-number,
+  .support-request {
+    font-size: 0.95rem;
+  }
+  footer {
+    width: calc(100% - 60px);
+    margin: 0 30px;
+  }
+  .footer-links p,
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+}
